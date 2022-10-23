@@ -7,11 +7,22 @@
     <title>Chat App</title>
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
         body {
+            background-color: black;
             padding: 0;
             margin: 0;
             display: flex;
             justify-content: center;
+            background: url('https://cdn.discordapp.com/attachments/1030441266355384352/1033656677465075732/nazarizal-mohammad-k5Z2AhnRwT8-unsplash_1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        input {
+            background: transparent;
+            font-family: inherit;
         }
 
         #message-container {
@@ -20,27 +31,45 @@
         }
 
         #message-container div{
-            background-color: #CCC;
+            background-color: rgba(68, 68, 68, 0.6);
             padding: 5px;
-        }
-
-        #message-container div:nth-child(2n) {
-            background-color: #FFF;
+            margin: 5px;
+            color: white;
+            font-size: 1.6em;
         }
 
         #send-container {
             position: fixed;
-            padding-bottom: 30px;
-            height: 30px;
+            padding-bottom: 40px;
+            height: 70px;
             bottom: 0;
-            background-color: white;
+            /* background-color: white; */
             max-width: 1200px;
             width: 80%;
             display: flex;
+            border-radius: 90px;
         }
 
         #message-input {
             flex-grow: 1;
+            outline: none;
+            border: none;
+            background: rgba(68, 68, 68, 0.6);
+            border-radius: 90px;
+            padding-left: 20px;
+            font-size: 1.4em;
+            font-weight: 800;
+            color: white;
+        }
+
+        #send-button{
+            margin-left: 20px;
+            width: 80px;
+            outline: none;
+            border: none;
+            border-radius: 90px;
+            font-size: 1.8em;
+            cursor: pointer;
         }
     </style>
     <link rel="stylesheet" href="/test.css">
@@ -55,9 +84,7 @@
     <div id="message-container"></div>
     <form id="send-container">
         <input type="text" id="message-input">
-        <button type="submit" id="send-button">Send</button>
-    </form>
-
-    
+        <button type="submit" id="send-button">🤿</button>
+    </form>    
 </body>
 </html>
